@@ -28,8 +28,10 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - run: |
-        ./setup.sh -b github-workflow -u non-root
-        ./setup.sh -b github-workflow
+        make no-packages
+        make all
+        #./setup.sh -b github-workflow -u non-root
+        #./setup.sh -b github-workflow
   docker:
     name: Test on fedora-latest
     runs-on: ubuntu-latest

@@ -4,4 +4,4 @@ COPY / /MyLinuxConfig/
 
 WORKDIR /MyLinuxConfig
 
-ENTRYPOINT ["./setup.sh"]
+ENTRYPOINT ["./make"]
